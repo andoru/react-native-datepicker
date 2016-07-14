@@ -246,6 +246,7 @@ class DatePicker extends Component {
                     maximumDate={this.props.maxDate && this.getDate(this.props.maxDate)}
                     onDateChange={(date) => this.setState({date: date})}
                     style={[Style.datePicker, this.customStyles.datePicker]}
+                    minuteInterval={this.props.minuteInterval || null}
                   />
                   <TouchableHighlight
                     underlayColor={'transparent'}
